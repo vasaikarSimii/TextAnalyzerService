@@ -4,8 +4,7 @@ Python Microservices App using FastAPI Framework
 The Text Analysis Platform is a microservices architecture that provides a centralized system for managing and interacting with multiple text analysis services, including sentiment analysis, word count, and entity recognition. The app uses Object-Oriented Programming principles as well as best practices to write clean code utilizing functions, classes, and modules as needed. All user requests are hitting one single API : /textanalyzer which then reroutes each request to the right port and service based on the service_name mentioned in the input parameter.
 
 ## Microservices Design
-![MicroServices Design](https://github.com/vasaikarSimii/TextAnalyzerService/assets/71291381/3162c76f-f6fa-40df-84ee-4dfc8e16c2d1)
-
+![MicroServices Design (1)](https://github.com/vasaikarSimii/TextAnalyzerService/assets/71291381/49d8abd3-422b-4e95-96d7-ddcc570a41b1)
 
 ## Key Features
 

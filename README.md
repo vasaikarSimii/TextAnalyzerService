@@ -27,9 +27,9 @@ The Text Analysis Platform is a microservices architecture that provides a centr
 1. Start the central microservice: uvicorn central_microservice.main:app --host 0.0.0.0 --port 8000
 2. Start each text analysis service in separate bash terminals:
    
-   - **Start Sentiment Analysis:** uvicorn sentiment_analysis_service.main:app --host 0.0.0.0 --port 8001
-  - **Start Word Count:** uvicorn word_count_service.main:app --host 0.0.0.0 --port 8002
-   - **Start Entity Recognition:** uvicorn entity_recognition_service.main:app --host 0.0.0.0 --port 8003
+- **Start Sentiment Analysis:** uvicorn sentiment_analysis_service.main:app --host 0.0.0.0 --port 8001
+- **Start Word Count:** uvicorn word_count_service.main:app --host 0.0.0.0 --port 8002
+- **Start Entity Recognition:** uvicorn entity_recognition_service.main:app --host 0.0.0.0 --port 8003
 
 3. Use the central microservice endpoint (`http://localhost:8000/textanalyzer`) to interact with the text analysis services.
    

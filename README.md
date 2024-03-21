@@ -36,12 +36,12 @@ The Text Analysis Platform is a microservices architecture that provides a centr
 ## Available API Calls: 
 Use Postman to test APIs and send the appropriate Key: Value as Query Params for each call. Make sure you are selecting correctly POST/GET/DELETE as indicated below.
 
-1. - **Register Service:**:  POST -> http://localhost/8000/resgister => Input params= {"service_name": "word_count", "port": "8002"}
-2. - **List Services:**:  GET -> http://localhost:8000/services
-3. - **Remove Services:**: DELETE -> http://localhost:8000/remove_service => Input params= {"service_name": "word_count"}
-4. - **Sentiment Analysis Service:**:  POST -> http://localhost/8000/textanalyzer => Input params= {"service_name": "sentiment_analysis", "text": "Today is a Good Day"}
-5. - **Word Count Service:**:  POST -> http://localhost/8000/textanalyzer => Input params= {"service_name": "word_count", "text": "Today is a Good Day"}
-6. - **Entity Recognition Service:**:  POST -> http://localhost/8000/textanalyzer => Input params= {"service_name": "entity_recognition", "text": "Today is a Good Day"}
+1. **Register Service:**:  POST -> http://localhost/8000/resgister => Input params= {"service_name": "word_count", "port": "8002"}
+2. **List Services:**:  GET -> http://localhost:8000/services
+3. **Remove Services:**: DELETE -> http://localhost:8000/remove_service => Input params= {"service_name": "word_count"}
+4. **Sentiment Analysis Service:**:  POST -> http://localhost/8000/textanalyzer => Input params= {"service_name": "sentiment_analysis", "text": "Today is a Good Day"}
+5. **Word Count Service:**:  POST -> http://localhost/8000/textanalyzer => Input params= {"service_name": "word_count", "text": "Today is a Good Day"}
+6. **Entity Recognition Service:**:  POST -> http://localhost/8000/textanalyzer => Input params= {"service_name": "entity_recognition", "text": "Today is a Good Day"}
 
 ## Running Tests
 Navigate to the directory containing the test folder and Run the following commands. Make sure all microservices are up and running before running test:

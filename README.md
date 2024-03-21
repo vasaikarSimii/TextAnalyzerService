@@ -4,6 +4,7 @@ Python Microservices App using FastAPI Framework
 The Text Analysis Platform is a microservices architecture that provides a centralized system for managing and interacting with multiple text analysis services, including sentiment analysis, word count, and entity recognition. The app uses Object-Oriented Programming principles as well as best practices to write clean code utilizing functions, classes, and modules as needed. All user requests are hitting one single API : /textanalyzer which then reroutes each request to the right port and service based on the service_name mentioned in the input parameter.
 
 ## Microservices Design
+![MicroServices Design](https://github.com/vasaikarSimii/TextAnalyzerService/assets/71291381/ad20ee63-79e6-4d52-9653-b7db84b41d33)
 
 ## Key Features
 
@@ -30,7 +31,7 @@ The Text Analysis Platform is a microservices architecture that provides a centr
   - **Start Word Count:** uvicorn word_count_service.main:app --host 0.0.0.0 --port 8002
    - **Start Entity Recognition:** uvicorn entity_recognition_service.main:app --host 0.0.0.0 --port 8003
 
-3. Use the central microservice endpoint (`http://localhost:8000/analyze`) to interact with the text analysis services.
+3. Use the central microservice endpoint (`http://localhost:8000/textanalyzer`) to interact with the text analysis services.
    
 ## Available API Calls: 
 Use Postman to test APIs and send the appropriate Key: Value as Query Params for each call. Make sure you are selecting correctly POST/GET/DELETE as indicated below.

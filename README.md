@@ -39,8 +39,8 @@ Use Postman to test APIs and send the appropriate Key: Value as Query Params for
 1. **Register Service:**:  POST -> http://localhost/8000/resgister => Input params= {"service_name": "word_count", "port": "8002"}
 2. **List Services:**:  GET -> http://localhost:8000/services
 3. **Remove Services:**: DELETE -> http://localhost:8000/remove_service => Input params= {"service_name": "word_count"}
-4. **Sentiment Analysis Service:**:  POST -> http://localhost/8000/textanalyzer => Input params= {"service_name": "sentiment_analysis", "text": "New York University is Good"}
-5. **Word Count Service:**:  POST -> http://localhost/8000/textanalyzer => Input params= {"service_name": "word_count", "text": "New York University is Good"}
+4. **Sentiment Analysis Service:**:  POST -> http://localhost/8000/textanalyzer => Input params= {"service_name": "sentiment_analysis", "text": "Today is a Good Day"}
+5. **Word Count Service:**:  POST -> http://localhost/8000/textanalyzer => Input params= {"service_name": "word_count", "text": "This assignment is so fun"}
 6. **Entity Recognition Service:**:  POST -> http://localhost/8000/textanalyzer => Input params= {"service_name": "entity_recognition", "text": "New York University is Good"}
 
 ## Running Tests

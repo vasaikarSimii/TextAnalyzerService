@@ -1,7 +1,9 @@
 # TextAnalyzerService
 Python Microservices App using FastAPI Framework
 
-The Text Analysis Platform is a microservices architecture that provides a centralized system for managing and interacting with multiple text analysis services, including sentiment analysis, word count, and entity recognition.
+The Text Analysis Platform is a microservices architecture that provides a centralized system for managing and interacting with multiple text analysis services, including sentiment analysis, word count, and entity recognition. The app uses Object-Oriented Programming principles as well as best practices to write clean code utilizing functions, classes, and modules as needed. 
+
+## Microservices Design
 
 ## Key Features
 
@@ -22,7 +24,7 @@ The Text Analysis Platform is a microservices architecture that provides a centr
 ## Running the Microservice Architecture
 
 1. Start the central microservice: uvicorn central_microservice.main:app --host 0.0.0.0 --port 8000
-2. Start each text analysis service:
+2. Start each text analysis service in separate bash terminals:
    
    - **Start Sentiment Analysis:** uvicorn sentiment_analysis_service.main:app --host 0.0.0.0 --port 8001
   - **Start Word Count:** uvicorn word_count_service.main:app --host 0.0.0.0 --port 8002
@@ -31,9 +33,14 @@ The Text Analysis Platform is a microservices architecture that provides a centr
 3. Use the central microservice endpoint (`http://localhost:8000/analyze`) to interact with the text analysis services.
    
 ## Available API Calls: 
-Open Postman and send the appropriate Key:Value to test each api call. Make sure you are selecting correctly POST/GET/DELETE as indicated below.
+Use Postman to test APIs and send the appropriate Key: Value as Query Params for each call. Make sure you are selecting correctly POST/GET/DELETE as indicated below.
 
-1. POST -> https://localhost/800/textanalyzer =>
+1. - **Register Service:**:  POST -> http://localhost/8000/resgister => Input params= {"service_name": "word_count", "port": "8002"}
+2. - **List Services:**:  GET -> http://localhost:8000/services
+3. - **Remove Services:**: DELETE -> http://localhost:8000/remove_service => Input params= {"service_name": "word_count"}
+4. - **Sentiment Analysis Service:**:  POST -> http://localhost/8000/textanalyzer => Input params= {"service_name": "sentiment_analysis", "text": "Today is a Good Day"}
+5. - **Word Count Service:**:  POST -> http://localhost/8000/textanalyzer => Input params= {"service_name": "word_count", "text": "Today is a Good Day"}
+6. - **Entity Recognition Service:**:  POST -> http://localhost/8000/textanalyzer => Input params= {"service_name": "entity_recognition", "text": "Today is a Good Day"}
 
 ## Running Tests
 Navigate to the directory containing the test folder and Run the following commands:

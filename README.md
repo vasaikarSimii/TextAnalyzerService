@@ -16,7 +16,7 @@ The Text Analysis Platform is a microservices architecture that provides a centr
 
 ## Environment Setup
 
-1. Clone the repository: git clone https://github.com/your-username/textanalyzer.git 
+1. Clone the repository: git clone git@github.com:{your-username}/TextAnalyzerService.git
 2. Navigate to the project directory: cd PythonFast
 3. Install dependencies:  pip install -r requirements.txt 
 

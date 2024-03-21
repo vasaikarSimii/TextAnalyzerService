@@ -43,12 +43,12 @@ Use Postman to test APIs and send the appropriate Key: Value as Query Params for
 6. - **Entity Recognition Service:**:  POST -> http://localhost/8000/textanalyzer => Input params= {"service_name": "entity_recognition", "text": "Today is a Good Day"}
 
 ## Running Tests
-Navigate to the directory containing the test folder and Run the following commands:
+Navigate to the directory containing the test folder and Run the following commands. Make sure all microservices are up and running before running test:
 
-1. pytest PythonFast/tests/test_central_microservice.py
-2. pytest PythonFast/tests/test_sentiment_analysis_service.py
-3. pytest PythonFast/tests/test_word_count_service.py
-4. pytest PythonFast/tests/test_entity_recognition_service.py
+1. pytest tests/test_central_microservice.py
+2. pytest tests/test_sentiment_analysis_service.py
+3. pytest tests/test_word_count_service.py
+4. pytest tests/test_entity_recognition_service.py
    
 
 
